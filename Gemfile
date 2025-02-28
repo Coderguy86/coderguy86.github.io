@@ -2,6 +2,7 @@
 
 source "https://rubygems.org"
 
+<<<<<<< HEAD
 gem "jekyll-theme-chirpy", "~> 6.0", ">= 6.0.1"
 
 group :test do
@@ -10,11 +11,18 @@ end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
+=======
+gem "jekyll-theme-chirpy", "~> 7.2", ">= 7.2.4"
+
+gem "html-proofer", "~> 5.0", group: :test
+
+>>>>>>> upstream/main
 platforms :mingw, :x64_mingw, :mswin, :jruby do
   gem "tzinfo", ">= 1", "< 3"
   gem "tzinfo-data"
 end
 
+<<<<<<< HEAD
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
@@ -26,3 +34,6 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 if RUBY_PLATFORM =~ /linux-musl/
   gem "jekyll-sass-converter", "~> 2.0"
 end
+=======
+gem "wdm", "~> 0.2.0", :platforms => [:mingw, :x64_mingw, :mswin]
+>>>>>>> upstream/main
